@@ -3,7 +3,7 @@
 	<div class='row1 clearfix'>
 
 		<div class='landscape'>
-			<img src='<?php echo Yii::app()->theme->baseUrl . "/css/assets/image01.jpg"?>' />
+			<img src='<?php echo Yii::app()->theme->config->topLandscape ?>' />
 			<div>
 				<div class='content'>
 					<i></i>
@@ -17,16 +17,16 @@
 		</div>
 
 		<div class='portrait'>
-			<img src='<?php echo Yii::app()->theme->baseUrl . "/css/assets/image02.jpg"?>' />
+			<img src='<?php echo Yii::app()->theme->config->topPortrait ?>' />
 		</div>
 	</div>
 
 	<div class='row2 clearfix'>
 		<div class='portrait'>
-			<img src='<?php echo Yii::app()->theme->baseUrl . "/css/assets/image03.jpg"?>' />
+			<img src='<?php echo Yii::app()->theme->config->bottomPortrait ?>' />
 		</div>
 		<div class='landscape'>
-			<img src='<?php echo Yii::app()->theme->baseUrl . "/css/assets/image04.jpg"?>' />
+			<img src='<?php echo Yii::app()->theme->config->bottomLandscape ?>' />
 			<div>
 				<div class='content'>
 					<i></i>
