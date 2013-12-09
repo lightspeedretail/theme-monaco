@@ -1,13 +1,13 @@
 <div class='header'>
 
 	<h3>
-		Collection II
+		<?php echo Yii::app()->theme->config->headerSurtitle; ?>
 	</h3>
 	<h1>
-		<span>Monaco</span>
+		<span><?= _xls_get_conf('STORE_NAME') ?></span>
 	</h1>
 	<h3>
-		High end luxury fashion theme
+		<?php echo Yii::app()->theme->config->headerSubtitle; ?>
 	</h3>
 
 </div>

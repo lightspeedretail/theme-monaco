@@ -61,6 +61,9 @@ class monacoAdminForm extends ThemeForm
 
 	public $disableGridRowDivs = true;
 
+	public $headerSurtitle;
+	public $headerSubtitle;
+
 	public $topLandscape;
 	public $topPortrait;
 	public $bottomLandscape;
@@ -106,6 +109,9 @@ class monacoAdminForm extends ThemeForm
 			array('facebookUrl', 'default', 'value' => ''),
 			array('twitterUrl', 'default', 'value' => ''),
 			array('pinterestUrl', 'default', 'value' => ''),
+
+			array('headerSurtitle', 'default', 'value' => 'Collection II'),
+			array('headerSubtitle', 'default', 'value' => 'High End Luxury Fashion Theme'),
 
 			array('topLandscapeText', 'required'),
 			array('topLandscapeUrl', 'required'),
@@ -157,6 +163,16 @@ class monacoAdminForm extends ThemeForm
 					'type'=>'dropdownlist',
 					'items'=>array('light'=>'Light','dark'=>'Dark'),
 				),
+				
+				'headerSurtitle'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
+				),
+				'headerSubtitle'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
+				),
+
 
 				'facebookUrl'=>array(
 					'type'=>'text',
