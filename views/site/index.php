@@ -7,7 +7,11 @@
 			<div>
 				<div class='content'>
 					<i></i>
-					<p><span class='line'></span>This is the text below it<span class='line'></span></p>
+					<p>
+						<span class='line'></span>
+						<span>2013 modern fit collection</span>
+						<span class='line'></span>
+					</p>
 				</div>
 			</div>
 		</div>
@@ -26,7 +30,11 @@
 			<div>
 				<div class='content'>
 					<i></i>
-					<p><span class='line'></span>This is the text below it<span class='line'></span></p>
+					<p>
+						<span class='line'></span>
+						<span>2013 MODERN FIT COLLECTION</span>
+						<span class='line'></span>
+					</p>
 				</div>
 			</div>
 		</div>

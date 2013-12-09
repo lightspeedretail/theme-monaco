@@ -28,6 +28,14 @@
 
 }
 
+.landscape .content span {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: Helvetica Neue;
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+
 .landscape .content i {
     position: absolute;
     top: -29px;
@@ -36,6 +44,14 @@
     border-bottom: 30px solid white;
     left: 50%;
     margin-left: -15px;
+}
+
+.landscape .content .line {
+    border-bottom: 2px solid black;
+    position: relative;
+    top: -15px;
+    margin: 0px 30px;
+    padding: 0px 50px;
 }
 
 .category-images .landscape p {
