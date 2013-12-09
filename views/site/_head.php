@@ -20,7 +20,7 @@
 
 	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->baseUrl.'/css/base.css'); ?>
 	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl.'/css/style.css'); ?>
-	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl.'/css/portland.css'); ?>
+	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl.'/css/monaco.css'); ?>
 	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl.'/css/'._xls_get_conf('CHILD_THEME').'.css'); ?>
 	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl.'/css/custom.css'); ?>
 	<?php echo $this->renderPartial("/site/_google",null,true); ?>
