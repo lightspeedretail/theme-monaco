@@ -147,7 +147,27 @@ p.copyright {
     font-size: 14px;
 }
 
+.header {
+    background-color: #f3f3f2;
+    color: #1c1e1c;
+    text-align: center;
+    text-transform: uppercase;
+}
 
+.header h3 {
+    font-size: 24px;
+    padding: 60px;
+}
+
+.header h1 {
+    font-size: 128px;
+    font-family: serif;
+}
+
+.header h1 span {
+    border-bottom: 3px solid #1c1e1c;
+    padding: 0px 30px;
+}
 
 
 
