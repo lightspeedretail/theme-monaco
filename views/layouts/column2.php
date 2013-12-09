@@ -32,9 +32,6 @@
 			$("#shoppingcart").toggleClass("shoppingcarthidden");
 		})
 
-
-		//add class to register menu div
-		$('#login').parent().addClass('loginDiv');
 		//menu positioning
 
 		var span2width = $('#menubar .span2 li').width();

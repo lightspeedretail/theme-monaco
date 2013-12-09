@@ -179,7 +179,29 @@ p.copyright {
 
 .col1 {
     width: 320px;
-    position: absolute;
+    position: fixed;
+    height: 100%;
+    background: url('assets/diamond_upholstery.png');
+    text-align: center;
+
+    text-transform: uppercase; 
+}
+
+.col1 .logo {
+    display: block;
+    min-height: 200px;
+}
+
+.checkoutlink,
+.login,
+.col1 ul {
+    list-style: none;
+    margin: 0px;
+    font-size: 24px;
+}
+
+.col1 ul ul {
+    font-size: 14px;
 }
 
 .col2 {
@@ -189,6 +211,44 @@ p.copyright {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+
+
+
+.col1 #nav_products .arrow {
+    position: absolute;
+    right: 0px;
+}
+.col1 #nav_products ul {
+    padding-bottom: 0px;
+}
+
+.col1 .login,
+.col1 #nav_products,
+.col1 #menutabs li {
+    margin-bottom: 60px;
+}
+.col1 .divider {
+    padding: 0px 135px;
+    border-bottom: 1px solid black;
+    margin-bottom: 40px;
+}
+
+.col1 .login {
+    margin-top: 60px;
+}
+
+.col1 .checkoutLink {
+
+}
+
+.col1 .dropspace a {
+    color: white;
+}
+
+
+
+
+
 
 
 
@@ -329,7 +389,6 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 #nav_products .dropspace li ul { width:196px; }
 #nav_products .dropspace li ul li { width:196px; }
 
-.logo { text-align: center; position: relative; top: 100%; }
 
 #menubar {
     padding: 70px 10px 15px;
@@ -351,21 +410,6 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
     background-color: #404349 !important;
 }
 
-#menubar a, 
-.productstab, 
-.nav_menuheader {
-	color: white !important;
-	font-size: 120% !important;
-    text-transform: none;
-}
-
-
-
-.menutab {
-	height: 35px;
-	border-bottom: 1px solid white;
-	margin: 0px !important;
-}
 
 .products {
     height: 38px;
@@ -374,9 +418,6 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 .menuunderline:hover {
     border-bottom: 5px solid white;
 }
-
-#menutabs { margin-left: -15px; }
-.menutabs li { display: inline; }
 
 #searchentry {
 	border-bottom: none;
@@ -789,9 +830,6 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 .row-fluid .span9{
 	width: 100%;
 }
-#nav_products {
-    height: 35px;
-}
 #nav_products ul li ul li a {
 	background: transparent;
 }
@@ -800,7 +838,6 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 #nav_products .dropspace {
 	margin-top: 0px !important;
-    padding-top: 17px;
 }
 .no-margin {
 	margin: 0px !important;
@@ -845,7 +882,7 @@ li.page.selected {
 
 
 #nav_products li ul ul {
-    margin: -36px 0 0 180px;
+    margin: -37px 0 0 200px;
 }
 
 .treeview li {
@@ -977,9 +1014,6 @@ li.page.selected {
 	#nav_products .dropspace a{
 		font-size: 70% !important;
 	}
-	.nav_menuheader {
-		margin-left: -30%;
-	}
 }
 @media (max-width: 1200px) {
     #menubar {
@@ -1037,15 +1071,6 @@ li.page.selected {
         margin: auto;        
     }
 
-    #menutabs {
-        margin-top: 10px;        
-    }
-
-    #menubar .menutab {
-        width: 100%;
-        margin: auto!important;
-        border: 0;
-    }
     #searchentry {
         margin-bottom: 15px;
     }
