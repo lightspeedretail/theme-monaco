@@ -71,6 +71,11 @@ class monacoAdminForm extends ThemeForm
 	public $bottomLandscapeText = "View the collection";
 	public $bottomPortraitText = "View Text on Hover";
 
+	public $topLandscapeUrl;
+	public $topPortraitUrl;
+	public $bottomLandscapeUrl;
+	public $bottomPortraitUrl;
+
 	public $menuposition = "left";
 	public $column2file = "column2";
 
@@ -79,6 +84,11 @@ class monacoAdminForm extends ThemeForm
 		$this->topPortrait = Yii::app()->theme->baseUrl . "/css/assets/image02.jpg";
 		$this->bottomLandscape = Yii::app()->theme->baseUrl . "/css/assets/image04.jpg";
 		$this->bottomPortrait = Yii::app()->theme->baseUrl . "/css/assets/image03.jpg";
+
+		$this->topLandscapeUrl = Yii::app()->baseUrl;
+		$this->topPortraitUrl = Yii::app()->baseUrl;
+		$this->bottomLandscapeUrl = Yii::app()->baseUrl;
+		$this->bottomPortraitUrl = Yii::app()->baseUrl;
 	}
 
 	/**
@@ -90,15 +100,19 @@ class monacoAdminForm extends ThemeForm
 			array('CHILD_THEME','required'),
 
 			array('topLandscapeText', 'required'),
+			array('topLandscapeUrl', 'required'),
 			array('topLandscape', 'required'),
 			
 			array('topPortraitText', 'required'),
+			array('topPortraitUrl', 'required'),
 			array('topPortrait', 'required'),
 			
 			array('bottomLandscapeText', 'required'),
+			array('bottomLandscapeUrl', 'required'),
 			array('bottomLandscape', 'required'),
 
 			array('bottomPortraitText', 'required'),
+			array('bottomPortraitUrl', 'required'),
 			array('bottomPortrait', 'required')
 			
 		);
@@ -140,6 +154,10 @@ class monacoAdminForm extends ThemeForm
 					'type'=>'text',
 					'maxlength'=>64,
 				),
+				'topLandscapeUrl'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
+				),
 				'topLandscape'=>array(
 					'type'=>'dropdownlist',
 					'items'=> Gallery::ImageList(2),
@@ -147,6 +165,10 @@ class monacoAdminForm extends ThemeForm
 
 
 				'topPortraitText'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
+				),
+				'topPortraitUrl'=>array(
 					'type'=>'text',
 					'maxlength'=>64,
 				),
@@ -159,12 +181,20 @@ class monacoAdminForm extends ThemeForm
 					'type'=>'text',
 					'maxlength'=>64,
 				),
+				'bottomLandscapeUrl'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
+				),
 				'bottomLandscape'=>array(
 					'type'=>'dropdownlist',
 					'items'=> Gallery::ImageList(2),
 				),
 
 				'bottomPortraitText'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
+				),
+				'bottomPortraitUrl'=>array(
 					'type'=>'text',
 					'maxlength'=>64,
 				),

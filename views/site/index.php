@@ -3,7 +3,9 @@
 	<div class='row1 clearfix'>
 
 		<div class='landscape'>
-			<img src='<?php echo Yii::app()->theme->config->topLandscape ?>' />
+			<a href='<?php echo Yii::app()->theme->config->topLandscapeUrl ?>'>
+				<img src='<?php echo Yii::app()->theme->config->topLandscape ?>' />
+			</a>
 			<div>
 				<div class='content'>
 					<i></i>
@@ -17,7 +19,9 @@
 		</div>
 
 		<div class='portrait'>
-			<img src='<?php echo Yii::app()->theme->config->topPortrait ?>' />
+			<a href='<?php echo Yii::app()->theme->config->topPortraitUrl ?>'>
+				<img src='<?php echo Yii::app()->theme->config->topPortrait ?>' />
+			</a>
 			<p>
 				<?php echo Yii::app()->theme->config->topPortraitText ?>
 			</p>
@@ -26,13 +30,17 @@
 
 	<div class='row2 clearfix'>
 		<div class='portrait'>
-			<img src='<?php echo Yii::app()->theme->config->bottomPortrait ?>' />
+			<a href='<?php echo Yii::app()->theme->config->bottomPortraitUrl ?>'>
+				<img src='<?php echo Yii::app()->theme->config->bottomPortrait ?>' />
+			</a>
 			<p>
 				<?php echo Yii::app()->theme->config->bottomPortraitText ?>
 			</p>
 		</div>
 		<div class='landscape'>
-			<img src='<?php echo Yii::app()->theme->config->bottomLandscape ?>' />
+			<a href='<?php echo Yii::app()->theme->config->bottomLandscapeUrl ?>'>
+				<img src='<?php echo Yii::app()->theme->config->bottomLandscape ?>' />
+			</a>
 			<div>
 				<div class='content'>
 					<i></i>
