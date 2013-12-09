@@ -318,7 +318,6 @@ a:hover {  text-decoration: none;   }
 #footer .addresshours .indentr { margin-right: 20px; margin-left: -20px; text-transform: uppercase;}
 #footer .bottomtabs { text-transform: uppercase; text-align: center; font-size: 0.9em;  }
 #footer .bottomtabs a { font-size: 1.1em; font-weight: 400; }
-#footer .copyright { text-align: center; text-transform: uppercase;  font-size: 0.8em;  }
 
 /****** jCarousel skin ******/
 /* If you set the slider photo size larger than 170px in Admin Panel, you will need to also adjust the following two lines */

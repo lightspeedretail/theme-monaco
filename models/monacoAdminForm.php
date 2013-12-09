@@ -76,6 +76,10 @@ class monacoAdminForm extends ThemeForm
 	public $bottomLandscapeUrl;
 	public $bottomPortraitUrl;
 
+	public $facebookUrl = "";
+	public $twitterUrl = "";
+	public $pinterestUrl = "";
+
 	public $menuposition = "left";
 	public $column2file = "column2";
 
@@ -98,6 +102,10 @@ class monacoAdminForm extends ThemeForm
 	{
 		return array(
 			array('CHILD_THEME','required'),
+
+			array('facebookUrl', 'default', 'value' => ''),
+			array('twitterUrl', 'default', 'value' => ''),
+			array('pinterestUrl', 'default', 'value' => ''),
 
 			array('topLandscapeText', 'required'),
 			array('topLandscapeUrl', 'required'),
@@ -148,6 +156,19 @@ class monacoAdminForm extends ThemeForm
 				'CHILD_THEME'=>array(
 					'type'=>'dropdownlist',
 					'items'=>array('light'=>'Light','dark'=>'Dark'),
+				),
+
+				'facebookUrl'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
+				),
+				'twitterUrl'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
+				),
+				'pinterestUrl'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
 				),
 
 				'topLandscapeText'=>array(
