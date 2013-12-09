@@ -60,7 +60,6 @@ class monacoAdminForm extends ThemeForm
 	public $PRODUCTS_PER_PAGE = 12;
 
 	public $disableGridRowDivs = true;
-	public $testvar;
 
 	public $topLandscape;
 	public $topPortrait;
@@ -89,15 +88,19 @@ class monacoAdminForm extends ThemeForm
 	{
 		return array(
 			array('CHILD_THEME','required'),
-			array('testvar','required'), //you can also stack items i.e. array('CHILD_THEME,testvar','required'),
-			array('topLandscape', 'required'),
-			array('topPortrait', 'required'),
-			array('bottomLandscape', 'required'),
-			array('bottomPortrait', 'required'),
+
 			array('topLandscapeText', 'required'),
+			array('topLandscape', 'required'),
+			
 			array('topPortraitText', 'required'),
+			array('topPortrait', 'required'),
+			
 			array('bottomLandscapeText', 'required'),
-			array('bottomPortraitText', 'required')
+			array('bottomLandscape', 'required'),
+
+			array('bottomPortraitText', 'required'),
+			array('bottomPortrait', 'required')
+			
 		);
 	}
 
@@ -127,44 +130,43 @@ class monacoAdminForm extends ThemeForm
 			'title' => 'Set your funky options for this theme!',
 
 			'elements'=>array(
+
 				'CHILD_THEME'=>array(
 					'type'=>'dropdownlist',
 					'items'=>array('light'=>'Light','dark'=>'Dark'),
-				),
-
-				'testvar'=>array(
-					'type'=>'text',
-					'maxlength'=>64,
 				),
 
 				'topLandscapeText'=>array(
 					'type'=>'text',
 					'maxlength'=>64,
 				),
-				'topPortraitText'=>array(
-					'type'=>'text',
-					'maxlength'=>64,
-				),
-				'bottomLandscapeText'=>array(
-					'type'=>'text',
-					'maxlength'=>64,
-				),
-				'bottomPortraitText'=>array(
-					'type'=>'text',
-					'maxlength'=>64,
-				),
-
 				'topLandscape'=>array(
 					'type'=>'dropdownlist',
 					'items'=> Gallery::ImageList(2),
+				),
+
+
+				'topPortraitText'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
 				),
 				'topPortrait'=>array(
 					'type'=>'dropdownlist',
 					'items'=> Gallery::ImageList(2),
 				),
+
+				'bottomLandscapeText'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
+				),
 				'bottomLandscape'=>array(
 					'type'=>'dropdownlist',
 					'items'=> Gallery::ImageList(2),
+				),
+
+				'bottomPortraitText'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
 				),
 				'bottomPortrait'=>array(
 					'type'=>'dropdownlist',
