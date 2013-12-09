@@ -245,7 +245,10 @@ p.copyright {
     color: white;
 }
 
-
+li.nav_menuheader {
+    background: url('assets/arrow-black.png') no-repeat;
+    background-position: 240px;
+}
 
 
 

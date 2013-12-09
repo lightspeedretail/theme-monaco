@@ -2,8 +2,9 @@
 <?php $this->widget('application.extensions.wsmenu.wsmenu', array(
 		'categories'=> Category::GetTree(),
 		'menuheader'=> Yii::t('global','Products'),
-		'showarrow'=>true,
+		'showarrow'=>false,
 	)); //products dropdown menu ?>
+	<i></i>
 <?php if (count(CustomPage::model()->toptabs()->findAll()))
 	$this->widget('zii.widgets.CMenu', array(
 	'id'=>'menutabs',
