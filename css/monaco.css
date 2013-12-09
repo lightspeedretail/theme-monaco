@@ -1,9 +1,18 @@
 .row1, .row2 {
     position: relative;
 }
-
-.category-images .portrait,
+.row1 .portrait {
+    margin-left: 60%;
+}
+.row2 .landscape {
+    margin-left: 40%;
+}
 .category-images .landscape {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+}
+.category-images .portrait {
     float: left;
 } 
 .category-images .portrait img,
@@ -14,23 +23,43 @@
 .category-images .portrait {
     width: 40%;
 }
-.category-images .landscape {
-    width: 60%;
-    display: table;
-}
 
 .category-images .landscape > * {
-    display: table-row;
+
 }
 
-.category-images .landscape > div {
-    position: relative;
+.landscape .content i {
+    position: absolute;
+    top: -29px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid white;
+    left: 50%;
+    margin-left: -15px;
 }
+
 .category-images .landscape p {
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5em !important;
+    margin: auto;
+    width: 100%;
     text-align: center;
 }
 
+.landscape .content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.landscape > div {
+    background: white;
+    height: 27%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
 
 
 

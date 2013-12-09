@@ -3,9 +3,10 @@
 	<div class='row1 clearfix'>
 
 		<div class='landscape'>
-			<div class='content'>
-				<img src='<?php echo Yii::app()->theme->baseUrl . "/css/assets/image01.jpg"?>' />
-				<div>
+			<img src='<?php echo Yii::app()->theme->baseUrl . "/css/assets/image01.jpg"?>' />
+			<div>
+				<div class='content'>
+					<i></i>
 					<p><span class='line'></span>This is the text below it<span class='line'></span></p>
 				</div>
 			</div>
@@ -21,10 +22,11 @@
 			<img src='<?php echo Yii::app()->theme->baseUrl . "/css/assets/image03.jpg"?>' />
 		</div>
 		<div class='landscape'>
-			<div class='content'>
-				<img src='<?php echo Yii::app()->theme->baseUrl . "/css/assets/image04.jpg"?>' />
-				<div>
-					This is the text below it
+			<img src='<?php echo Yii::app()->theme->baseUrl . "/css/assets/image04.jpg"?>' />
+			<div>
+				<div class='content'>
+					<i></i>
+					<p><span class='line'></span>This is the text below it<span class='line'></span></p>
 				</div>
 			</div>
 		</div>
