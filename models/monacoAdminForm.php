@@ -67,6 +67,11 @@ class monacoAdminForm extends ThemeForm
 	public $bottomLandscape;
 	public $bottomPortrait;
 
+	public $topLandscapeText = "2013 modern fit collection";
+	public $topPortraitText = "This is the hover";
+	public $bottomLandscapeText = "View the collection";
+	public $bottomPortraitText = "View Text on Hover";
+
 	public $menuposition = "left";
 	public $column2file = "column2";
 
@@ -88,7 +93,11 @@ class monacoAdminForm extends ThemeForm
 			array('topLandscape', 'required'),
 			array('topPortrait', 'required'),
 			array('bottomLandscape', 'required'),
-			array('bottomPortrait', 'required')
+			array('bottomPortrait', 'required'),
+			array('topLandscapeText', 'required'),
+			array('topPortraitText', 'required'),
+			array('bottomLandscapeText', 'required'),
+			array('bottomPortraitText', 'required')
 		);
 	}
 
@@ -124,6 +133,23 @@ class monacoAdminForm extends ThemeForm
 				),
 
 				'testvar'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
+				),
+
+				'topLandscapeText'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
+				),
+				'topPortraitText'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
+				),
+				'bottomLandscapeText'=>array(
+					'type'=>'text',
+					'maxlength'=>64,
+				),
+				'bottomPortraitText'=>array(
 					'type'=>'text',
 					'maxlength'=>64,
 				),

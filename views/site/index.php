@@ -9,7 +9,7 @@
 					<i></i>
 					<p>
 						<span class='line'></span>
-						<span>2013 modern fit collection</span>
+						<span><?php echo Yii::app()->theme->config->topLandscapeText ?></span>
 						<span class='line'></span>
 					</p>
 				</div>
@@ -18,12 +18,18 @@
 
 		<div class='portrait'>
 			<img src='<?php echo Yii::app()->theme->config->topPortrait ?>' />
+			<p>
+				<?php echo Yii::app()->theme->config->topPortraitText ?>
+			</p>
 		</div>
 	</div>
 
 	<div class='row2 clearfix'>
 		<div class='portrait'>
 			<img src='<?php echo Yii::app()->theme->config->bottomPortrait ?>' />
+			<p>
+				<?php echo Yii::app()->theme->config->bottomPortraitText ?>
+			</p>
 		</div>
 		<div class='landscape'>
 			<img src='<?php echo Yii::app()->theme->config->bottomLandscape ?>' />
@@ -32,7 +38,7 @@
 					<i></i>
 					<p>
 						<span class='line'></span>
-						<span>2013 MODERN FIT COLLECTION</span>
+						<span><?php echo Yii::app()->theme->config->bottomLandscapeText ?></span>
 						<span class='line'></span>
 					</p>
 				</div>
