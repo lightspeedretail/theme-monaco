@@ -152,7 +152,7 @@ p.copyright {
     color: #1c1e1c;
     text-align: center;
     text-transform: uppercase;
-    padding: 55px 0px;
+    padding: 50px 0px;
 }
 
 .header h3 {
@@ -162,10 +162,10 @@ p.copyright {
 }
 
 .header h1 {
-    font-size: 128px;
-    line-height: 128px;
+    font-size: 100px;
+    line-height: 100px;
     font-family: serif;
-    padding: 20px 0px 30px 0px;
+    padding: 0px 0px 16px 0px;
 }
 
 .header h1 span {
@@ -180,6 +180,7 @@ p.copyright {
 .col1 {
     width: 320px;
     position: fixed;
+    z-index: 10;
     height: 100%;
     background: url('assets/diamond_upholstery.png');
     text-align: center;

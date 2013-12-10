@@ -42,15 +42,19 @@
 			            $model->InventoryDisplay); ?>
 
 	            </div>
-
+				
+				<div class="row">
+		            <?= CHtml::tag('div',
+	                	array('id'=>CHtml::activeId($model,'description_long'),'class'=>''),
+	                	$model->WebLongDescription); ?>
+    			</div>
 
 		        <?php if (_xls_get_conf('USE_SHORT_DESC'))
 			        echo CHtml::tag('div',
-				        array('id'=>CHtml::activeId($model,'description_short'),'class'=>'description'),
+				        array('id'=>CHtml::activeId($model,'description_short'),'class'=>'row description'),
 			            $model->WebShortDescription);
-		        ?>
-
-
+			    ?>
+			    
 	            <?php if ($model->IsMaster): ?>
 	                <div class="row">
 	                    <?= $this->renderPartial('/product/_matrixdropdown', array('form'=>$form,'model'=>$model), true); ?>
@@ -139,12 +143,7 @@
 		</div><!-- end of top row -->
 
 		<div class="row-fluid">
-	        <div class="description">
-	                <h2><?= Yii::t('product', 'Product Description')?></h2>
-		            <?= CHtml::tag('div',
-			                array('id'=>CHtml::activeId($model,'description_long'),'class'=>'description'),
-			                $model->WebLongDescription); ?>
-	        </div>
+	        
 
 	        <div class="facebook_comments">
 		        <?php if(_xls_facebook_login() && _xls_get_conf('FACEBOOK_COMMENTS')): ?>
