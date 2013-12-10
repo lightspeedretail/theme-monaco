@@ -26,11 +26,11 @@
         </configuration>
         <configuration>
             <key_name>DETAIL_IMAGE_HEIGHT</key_name>
-            <key_value>256</key_value>
+            <key_value>750</key_value>
         </configuration>
         <configuration>
             <key_name>DETAIL_IMAGE_WIDTH</key_name>
-            <key_value>256</key_value>
+            <key_value>500</key_value>
         </configuration>
         <configuration>
             <key_name>LISTING_IMAGE_HEIGHT</key_name>
@@ -70,7 +70,7 @@
         </configuration>
         <configuration>
             <key_name>PRODUCTS_PER_PAGE</key_name>
-            <key_value>9</key_value>
+            <key_value>20</key_value>
         </configuration>
     </defaults>
 </config>
