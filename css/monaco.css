@@ -113,14 +113,14 @@ p.links {
 }
 p.links a,
 p.links {
-    font-size: 24px;
+    font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: "Helvetica Neue";
     font-weight: 200;
 }
 p.links a {
-    padding: 0px 30px;
+    padding: 0px 10px;
 }
 p.links,
 p.social {
@@ -156,21 +156,21 @@ p.copyright {
 }
 
 .header h3 {
-    font-size: 24px;
+    font-size: 18px;
     padding: 0px;
     margin: 0px;
 }
 
 .header h1 {
-    font-size: 100px;
-    line-height: 100px;
+    font-size: 72px;
+    line-height: 72px;
     font-family: serif;
     padding: 0px 0px 16px 0px;
 }
 
 .header h1 span {
     border-bottom: 3px solid #1c1e1c;
-    padding: 0px 80px;
+    padding: 0px 50px;
 }
 
 .col1, .col2 {
@@ -194,11 +194,16 @@ p.copyright {
 }
 
 .checkoutlink,
+.checkoutlink a,
+.login a,
 .col1 .login,
-.col1 ul {
+.col1 ul,
+.col1 ul a {
     list-style: none;
     margin: 0px;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 100 !important;
+    letter-spacing: 1px;
 }
 
 .col1 ul ul {
@@ -226,7 +231,7 @@ p.copyright {
 .col1 .login,
 .col1 #nav_products,
 .col1 #menutabs li {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 .col1 .divider {
     padding: 0px 135px;
@@ -293,6 +298,10 @@ border: 1px solid silver;
 
 .cart-item .item .desc {
     margin-left: 20px;
+}
+.cart-item .item .desc a {
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 
