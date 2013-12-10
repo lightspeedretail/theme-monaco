@@ -85,7 +85,7 @@ a:hover {  text-decoration: none;   }
 .dropdown-menu strong { color: #white; }
 
 /***** Breadcrumbs ******/
-.breadcrumbs { text-transform: uppercase;  padding-bottom: 15px; padding-top: 8px; margin-bottom: 10px; clear:both; border-bottom: 1px dotted #aaaaaa;}
+.breadcrumbs { text-transform: uppercase;  padding-bottom: 15px; padding-top: 8px; margin-bottom: 10px; clear:both; }
 .breadcrumbs .homebutton { padding-bottom: 0px; margin: auto; height: 29px; width: 25px; float: left; }
 .breadcrumbs img { width: 16px; height: 29px; float: left; margin-top: -5px; margin-right: 3px; }
 .breadcrumbs a {  }
@@ -96,9 +96,7 @@ a:hover {  text-decoration: none;   }
 #gridheader h1 { line-height: 40px; margin-top: 0px; margin-bottom: 3px; }
 .subcategories { margin-left: 10px;margin-bottom: 15px;}
 .subcategories a { text-decoration: underline; padding-right: 10px;}
-.product_cell { min-height: 300px !important; vertical-align: baseline; cursor: pointer; margin-bottom: 10px; margin-left: 5px  !important;}
-.product_cell_graphic { height: 225px; margin: auto;}
-.product_cell img { max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-top: 10px;}
+.product_cell img { max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;}
 .product_cell_label  { clear: both; margin: auto;  padding-top: 0; padding-left: 2px; padding-right: 2px; text-transform:uppercase; height: 65px; vertical-align: bottom;  text-align: center;}
 .product_cell_label .product_cell_price {padding: 0px;}
 .product_cell_label .product_cell_price_slash { text-decoration: line-through;  padding-right: 10px; }
