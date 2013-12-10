@@ -16,16 +16,15 @@
 
 			<div class='col2'>
 
-				<?php echo $this->renderPartial("/site/_header",null,true,false); ?>
-			<!-- content (viewport) -->
-				<?php echo $content; ?>
-			
+				<div class='main'>
+					<?php echo $this->renderPartial("/site/_header",null,true,false); ?>
+				<!-- content (viewport) -->
+					<?php echo $content; ?>
+				</div>
 				<!-- footer -->
-				<?php echo $this->renderPartial("/site/_footer",null,true,false); ?>
-
 			</div>
-			
 
+			<?php echo $this->renderPartial("/site/_footer",null,true,false); ?>
 
 		</div>
 
@@ -33,5 +32,7 @@
 
 		<?php echo $this->loginDialog; ?>
 
+		
+			
 	</body>
 </html>

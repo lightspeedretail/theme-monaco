@@ -47,8 +47,8 @@ class monacoAdminForm extends ThemeForm
 	 */
 	public $CATEGORY_IMAGE_HEIGHT = 180;
 	public $CATEGORY_IMAGE_WIDTH = 180;
-	public $DETAIL_IMAGE_HEIGHT = 256;
-	public $DETAIL_IMAGE_WIDTH = 256;
+	public $DETAIL_IMAGE_HEIGHT = 750;
+	public $DETAIL_IMAGE_WIDTH = 500;
 	public $LISTING_IMAGE_HEIGHT = 190;
 	public $LISTING_IMAGE_WIDTH = 190;
 	public $MINI_IMAGE_HEIGHT = 30;

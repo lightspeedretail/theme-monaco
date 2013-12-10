@@ -1,6 +1,6 @@
-<div id="footer" class="row-fluid">
+<div id="footer" class='container-fluid'>
 
-	<div class='container-fluid'>
+	<div >
 
 		<p class='links'>
 			<?php
