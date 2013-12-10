@@ -285,6 +285,21 @@ border: 1px solid silver;
     padding: 0px 4px;
 }
 
+.cart-item .item .desc,
+.cart-item .item img {
+    float: left;
+}
+
+
+.cart-item .item .desc {
+    margin-left: 20px;
+}
+
+
+
+
+
+
 
 
 
@@ -327,6 +342,10 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 #viewport {
     min-height: 300px;
     margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .viewport { padding: 20px; }
@@ -554,6 +573,33 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 #gridheader {
 	margin-left: 50px;
+}
+
+.checkout.big-button {
+    background-color: #293639;
+    color: white;
+    display: block;
+    float: right;
+    margin-left: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.big-button {
+    color: white;
+    background-color: #a5a7b1;
+    max-width: 190px;
+    min-width: 190px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    font-size: 1em;
+    padding: 10px;
+    line-height: 25px; 
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 #shoppingcartcontinue {
@@ -894,7 +940,22 @@ li.page.selected {
     font-weight: bold;
 }
 
+.cart-header {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
 
+.cart-adjust {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid black;
+}
+
+.cart-adjust input {
+    background: none;
+    color: black;
+    border: none;
+}
 
 #nav_products li ul ul {
     margin: -37px 0 0 200px;
@@ -908,6 +969,20 @@ li.page.selected {
 .table th, .table td {
     border:none;
     font-size: 1em;    
+}
+
+input.cart_qty_box,
+input.cart_qty_box:focus {
+    font-size: 1em;
+    border: 1px solid #E5E5E5;
+    text-transform: none;
+    padding: 2px;
+    margin: 0;
+    width: auto!important;
+    max-width: 60px;  
+    
+    text-align: center; 
+    height: 15px;
 }
 
 #genericcart input[type="text"],

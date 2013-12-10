@@ -1,6 +1,6 @@
 <?php $this->beginContent('//layouts/main'); ?>
 
-
+<div class="container-fluid">
 	<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
 			'homeLink'=>CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/css/images/breadcrumbs_home.png'), array('/site/index')),
@@ -21,7 +21,7 @@
     <div id="viewport" class="row-fluid">
 		<?php echo $content; ?>
     </div>
-
+</div>
 
 
 

@@ -6,7 +6,7 @@
 ?>
 	<div id="product_details" class="viewport">
 		<div class="row-fluid">
-	        <div class="span5">
+	        <div class="span4">
 		        <div id="photos">
 			        <?= $this->renderPartial('/product/_photos', array('model'=>$model), true); ?>
 	            </div>

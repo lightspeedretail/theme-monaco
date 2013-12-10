@@ -1,5 +1,5 @@
 <?php $this->beginContent('//layouts/main'); ?>
-<div class="row-fluid products-grid">
+<div class="container-fluid products-grid">
 	<?php $this->widget('zii.widgets.CBreadcrumbs', array(
         'links'=>$this->breadcrumbs,
 		'homeLink'=>CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/css/images/breadcrumbs_home.png'), array('/site/index')),
