@@ -4,3 +4,7 @@ $(document).ready(function () {
 		$("#container").toggleClass("noverflow");
 	});
 });
+window.onresize = function () {
+	$(".col1,.col2").removeClass("show");
+	$("#container").removeClass("noverflow");
+};
