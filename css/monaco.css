@@ -7,7 +7,8 @@
 .row2 .landscape {
     margin-left: 40%;
 }
-.category-images .landscape {
+.category-images .row1 .landscape,
+.category-images .row2 .landscape {
     position: absolute;
     height: 100%;
     width: 60%;
@@ -90,12 +91,21 @@
     width: 100%;
 }
 
-.landscape > div {
+.landscape.visible-phone .content {
+    height: 120px;
+}
+
+.row1 .landscape > div,
+.row2 .landscape > div {
     background: white;
     height: 27%;
     width: 100%;
     position: absolute;
     bottom: 0px;
+}
+
+.landscape.visible-phone {
+    position: relative;
 }
 
 #footer {
@@ -236,7 +246,7 @@ html, body {
 .col2 .main {
     min-height: 100%;
     height: auto !important;
-    padding-bottom: 223px;
+    padding-bottom: 176px;
 }
 
 .col1 #nav_products .arrow {
@@ -325,9 +335,6 @@ li.nav_menuheader {
     padding-top: 10px !important;
     margin-top: 10px !important;
     border-top: 1px solid white;
-}
-.products-grid {
-    padding: 0px 4px;
 }
 
 #Product_title {
@@ -470,7 +477,6 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 #viewport {
     min-height: 300px;
     margin: auto;
-    padding: 10px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;

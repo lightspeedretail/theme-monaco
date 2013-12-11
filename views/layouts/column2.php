@@ -1,5 +1,5 @@
 <?php $this->beginContent('//layouts/main'); ?>
-<div class="container-fluid products-grid">
+<div>
 	<?php $this->widget('zii.widgets.CBreadcrumbs', array(
         'links'=>$this->breadcrumbs,
 		'homeLink'=>CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/css/images/breadcrumbs_home.png'), array('/site/index')),
@@ -17,7 +17,7 @@
 			'danger'=>array('block'=>true, 'fade'=>true, 'closeText'=>'&times;'), // success, info, warning, error or danger
 		),
 		)); ?><!-- flash messages -->
-    <div id="viewport" class="row-fluid">
+    <div id="viewport">
 	    <?php echo $content; ?>
     </div>
 </div>

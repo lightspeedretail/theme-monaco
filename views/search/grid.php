@@ -1,3 +1,4 @@
+<div class='container-fluid'>
 <?php if (count($model) > 0): ?>
 
 
@@ -45,5 +46,5 @@
         </div>
 
 
+</div>
 <?php endif;
-
