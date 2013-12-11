@@ -13,7 +13,7 @@ class monacoAdminForm extends ThemeForm
 	 */
 	protected $name = "Monaco";
 	protected $thumbnail = "monaco.png";
-	protected $version = 3;
+	protected $version = 1.0;
 	protected $description = "A template for fashion";
 	protected $credit = "Designed by Skyrocket Digital Inc.";
 	protected $parent; //Used when a theme is a copy of another theme to control inheritance
@@ -57,7 +57,7 @@ class monacoAdminForm extends ThemeForm
 	public $PREVIEW_IMAGE_WIDTH = 30;
 	public $SLIDER_IMAGE_HEIGHT = 90;
 	public $SLIDER_IMAGE_WIDTH = 90;
-	public $PRODUCTS_PER_PAGE = 12;
+	public $PRODUCTS_PER_PAGE = 20;
 
 	public $disableGridRowDivs = true;
 
