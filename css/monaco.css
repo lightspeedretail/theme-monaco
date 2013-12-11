@@ -159,6 +159,7 @@ p.copyright {
     text-align: center;
     text-transform: uppercase;
     padding: 30px 0px;
+    position: relative;
 }
 
 .header h3 {
@@ -347,9 +348,26 @@ li.nav_menuheader {
     text-transform: uppercase;
 }
 
-
-
-
+.mobile-menu-btn {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+.mobile-menu-btn i {
+    display: block;
+    width: 32px;
+    border-bottom: 4px solid black;
+    margin-bottom: 4px;
+}
+.mobile-cart-btn {
+    background: url('images/shoppingcartlight.png') no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
 
 
 
