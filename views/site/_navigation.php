@@ -6,7 +6,7 @@
 		'CssClass' => 'menutab hidden-phone'
 	)); //products dropdown menu ?>
 	<i></i>
-	Products
+	<span class='visible-phone'>Products</span>
 	<ul class='visible-phone'>
 		<?php foreach(Category::GetTree() as $item) { ?>
 			<li>
