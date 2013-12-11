@@ -45,18 +45,18 @@ class monacoAdminForm extends ThemeForm
 	 * the Configuration panel for your theme, and click Save. This will write these values to the
 	 * xlsws_module table for your themes, which is where Web Store looks for them at runtime.
 	 */
-	public $CATEGORY_IMAGE_HEIGHT = 180;
-	public $CATEGORY_IMAGE_WIDTH = 180;
-	public $DETAIL_IMAGE_HEIGHT = 750;
-	public $DETAIL_IMAGE_WIDTH = 500;
-	public $LISTING_IMAGE_HEIGHT = 190;
-	public $LISTING_IMAGE_WIDTH = 190;
-	public $MINI_IMAGE_HEIGHT = 30;
-	public $MINI_IMAGE_WIDTH = 30;
-	public $PREVIEW_IMAGE_HEIGHT = 30;
-	public $PREVIEW_IMAGE_WIDTH = 30;
-	public $SLIDER_IMAGE_HEIGHT = 90;
-	public $SLIDER_IMAGE_WIDTH = 90;
+	protected $CATEGORY_IMAGE_HEIGHT = 180;
+	protected $CATEGORY_IMAGE_WIDTH = 180;
+	protected $DETAIL_IMAGE_HEIGHT = 750;
+	protected $DETAIL_IMAGE_WIDTH = 500;
+	protected $LISTING_IMAGE_HEIGHT = 190;
+	protected $LISTING_IMAGE_WIDTH = 190;
+	protected $MINI_IMAGE_HEIGHT = 30;
+	protected $MINI_IMAGE_WIDTH = 30;
+	protected $PREVIEW_IMAGE_HEIGHT = 30;
+	protected $PREVIEW_IMAGE_WIDTH = 30;
+	protected $SLIDER_IMAGE_HEIGHT = 90;
+	protected $SLIDER_IMAGE_WIDTH = 90;
 	public $PRODUCTS_PER_PAGE = 20;
 
 	public $disableGridRowDivs = true;
