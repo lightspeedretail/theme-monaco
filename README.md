@@ -7,8 +7,8 @@ Monaco theme for Lightspeed Webstore
 1.Typography
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 1.Typography
 
 Typefaces Helvetica-Neue and Baskerville Old Face are used for this theme.
