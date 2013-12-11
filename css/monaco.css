@@ -369,6 +369,63 @@ li.nav_menuheader {
     top: 16px;
 }
 
+.col1,
+.col2 {
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+@media (max-width: 767px) { 
+    .col1 {
+        transform: translate(-320px,0px);
+        -ms-transform: translate(-320px,0px); /* IE 9 */
+        -webkit-transform: translate(-320px,0px); /* Safari and Chrome */
+    }
+    #footer,
+    .col2 {
+        padding-left: 0px !important;
+    }
+    .header h1 {
+        font-size: 32px;
+    }
+    body {
+        padding: 0px;
+    }
+    .product_cell {
+        float: none !important;
+        margin: 5px auto;
+    }
+}
+
+.col2.show {
+    transform: translate(320px,0px);
+    -ms-transform: translate(320px,0px); /* IE 9 */
+    -webkit-transform: translate(320px,0px); /* Safari and Chrome */
+}
+.col1.show {
+    position: absolute;
+    height: 100%;
+    transform: translate(0px,0px) !important;
+    -ms-transform: translate(0px,0px) !important; /* IE 9 */
+    -webkit-transform: translate(0px,0px) !important; /* Safari and Chrome */
+}
+#container.noverflow {
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1142,7 +1199,7 @@ input.cart_qty_box:focus {
     color: white;
 }
 
-@media (max-width: 1600px) {
+/*@media (max-width: 1600px) {
 	#headerimagebg {
 		margin-top: 0%;
 	}
@@ -1274,4 +1331,4 @@ input.cart_qty_box:focus {
         text-align: center;
         padding-top:5px;
     }
-}
+}*/

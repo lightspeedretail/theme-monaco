@@ -33,6 +33,6 @@
 		<?php echo $this->loginDialog; ?>
 
 		
-			
+		<?php Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl.'/js/all.js'); ?>	
 	</body>
 </html>
