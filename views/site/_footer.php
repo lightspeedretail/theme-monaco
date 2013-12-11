@@ -12,18 +12,18 @@
 		</p>
 
 		<p class='social'>
-			<?php if (Yii::app()->theme->config->facebookUrl != "") { ?>
-			<a href='<?php echo Yii::app()->theme->config->facebookUrl; ?>'>
+			<?php if (Yii::app()->params['SOCIAL_FACEBOOK'] != "") { ?>
+			<a href='<?php echo Yii::app()->params['SOCIAL_FACEBOOK']; ?>'>
 				<img src='<?php echo Yii::app()->theme->baseUrl . "/css/assets/icons/facebook.png"?>' />
 			</a>
 			<?php }
-			if (Yii::app()->theme->config->twitterUrl != "") { ?>
-			<a href='<?php echo Yii::app()->theme->config->twitterUrl; ?>'>
+			if (Yii::app()->params['SOCIAL_TWITTER'] != "") { ?>
+			<a href='<?php echo Yii::app()->params['SOCIAL_TWITTER']; ?>'>
 				<img src='<?php echo Yii::app()->theme->baseUrl . "/css/assets/icons/twitter.png"?>' />
 			</a>
 			<?php }
-			if (Yii::app()->theme->config->pinterestUrl != "") { ?>
-				<a href='<?php echo Yii::app()->theme->config->pinterestUrl; ?>'>
+			if (Yii::app()->params['SOCIAL_PINTEREST'] != "") { ?>
+				<a href='<?php echo Yii::app()->params['SOCIAL_PINTEREST']; ?>'>
 					<img src='<?php echo Yii::app()->theme->baseUrl . "/css/assets/icons/pinterest.png"?>' />
 				</a>
 			<?php } ?>
