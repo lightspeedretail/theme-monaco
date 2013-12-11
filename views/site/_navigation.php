@@ -3,8 +3,17 @@
 		'categories'=> Category::GetTree(),
 		'menuheader'=> Yii::t('global','Products'),
 		'showarrow'=>false,
+		'CssClass' => 'menutab hidden-phone'
 	)); //products dropdown menu ?>
 	<i></i>
+	Products
+	<ul class='visible-phone'>
+		<?php foreach(Category::GetTree() as $item) { ?>
+			<li>
+				<a href='<?php echo $item['link']?>'><?php echo $item['text']; ?></a>
+			</li>
+		<?php } ?>
+	</ul>
 <?php if (count(CustomPage::model()->toptabs()->findAll()))
 	$this->widget('zii.widgets.CMenu', array(
 	'id'=>'menutabs',

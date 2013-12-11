@@ -211,6 +211,7 @@ p.copyright {
     max-width: 300px;
 }
 
+.col1,
 .checkoutlink,
 .checkoutlink a,
 .login a,
@@ -389,6 +390,17 @@ li.nav_menuheader {
         transform: translate(-320px,0px);
         -ms-transform: translate(-320px,0px); /* IE 9 */
         -webkit-transform: translate(-320px,0px); /* Safari and Chrome */
+
+        text-align: left;
+        padding-left: 35px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+
+    }
+    .col1 .logo {
+        margin-left: 0px;
+        padding-left: 0px;
     }
     #footer,
     .col2 {
@@ -422,12 +434,16 @@ li.nav_menuheader {
     overflow: hidden;
 }
 
+.col1 ul.visible-phone {
+    text-align: left;
+    border-top: 2px solid silver;
+    margin: 10px 0px 20px 20px;
+}
 
-
-
-
-
-
+.col1 ul.visible-phone li {
+    border-bottom: 2px solid silver;
+    padding: 10px 0px;
+}
 
 
 
