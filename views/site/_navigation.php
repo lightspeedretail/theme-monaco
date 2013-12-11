@@ -1,3 +1,4 @@
+
 <?php echo CHtml::link(CHtml::image(Yii::app()->baseUrl._xls_get_conf('HEADER_IMAGE')), Yii::app()->baseUrl."/", array('class'=>'logo') ); ?>
 <?php $this->widget('application.extensions.wsmenu.wsmenu', array(
 		'categories'=> Category::GetTree(),

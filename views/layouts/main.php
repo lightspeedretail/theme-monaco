@@ -11,6 +11,7 @@
 			
 
 			<div class='col1'>
+				
 				<?php echo $this->renderPartial("/site/_navigation",null,true,false); ?>
 			</div>
 
