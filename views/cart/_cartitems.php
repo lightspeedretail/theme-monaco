@@ -25,13 +25,13 @@
 
 <?php foreach($model->cartItems as $item): ?>
 <div class='cart-item row-fluid'>
-    <div class='item span5'>
+    <div class='item span2'>
         <?php if ($item->product->ProductPhotos) { ?>
             <img src="<?php echo $item->product->ProductPhotos[0]['image']; ?>" style='max-width: 128px' />
         <?php } ?>
-        <div class='desc'>
-            <a href="<?php echo $item->Link; ?>"><?=  _xls_truncate($item->description, 65, "...\n", true); ?></a>
-        </div>
+    </div>
+    <div class='span3'>
+        <a href="<?php echo $item->Link; ?>"><?=  _xls_truncate($item->description, 65, "...\n", true); ?></a>
     </div>
     <div class='span1'>
         X
