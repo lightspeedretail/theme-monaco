@@ -6,6 +6,5 @@ $(document).ready(function () {
 	});
 });
 window.onresize = function () {
-	//$(".col1,.col2").removeClass("show");
-	$("#container").removeClass("noverflow");
+	$(".col1,.col2").removeClass("show");
 };
