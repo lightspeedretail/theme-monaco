@@ -87,7 +87,7 @@ $form = $this->beginWidget('CActiveForm', array(
           array('class'=>'clear-cart-btn'),
           array('confirm'=>Yii::t('cart',"Are you sure you want to erase your cart items?"))); ?>
         </td>
-        <td class="span5 text-right item-foot-label" colspan="2"><?= Yii::t('cart','Subtotal'); ?></td>
+        <td class="span5 textalign-right item-foot-label" colspan="2"><?= Yii::t('cart','Subtotal'); ?></td>
         <td class="span2 item-foot-price"><?= _xls_currency($model->subtotal); ?></td>
       </tr>
   <?php if($model->TaxTotal && Yii::app()->params['TAX_INCLUSIVE_PRICING']=='0'): ?>
@@ -95,7 +95,7 @@ $form = $this->beginWidget('CActiveForm', array(
       <?php if($taxvalue): ?>
       <tr>
         <td class="span5">&nbsp;</td>
-        <td class="span5 text-right item-foot-label" colspan="2"><?= $tax; ?></td>
+        <td class="span5 textalign-right item-foot-label" colspan="2"><?= $tax; ?></td>
         <td class="span2 item-foot-price"><?= _xls_currency($taxvalue); ?></td>
       </tr>
       <?php endif; ?>
@@ -103,12 +103,12 @@ $form = $this->beginWidget('CActiveForm', array(
   <?php endif; ?>
       <tr class="slimrow">
         <td class="span5">&nbsp;</td>
-        <td class="span5 text-right item-foot-label" colspan="2"><?= Yii::t('cart','Shipping'); ?></td>
+        <td class="span5 textalign-right item-foot-label" colspan="2"><?= Yii::t('cart','Shipping'); ?></td>
         <td class="span2 item-foot-price"><?= _xls_currency($model->shipping_sell); ?></td>
       </tr>
       <tr class="slimrow">
         <td class="span5">&nbsp;</td>
-        <td class="span5 text-right item-foot-label" colspan="2"><?= Yii::t('cart',"Total"); ?> </td>
+        <td class="span5 textalign-right item-foot-label" colspan="2"><?= Yii::t('cart',"Total"); ?> </td>
         <td class="span2 item-foot-price"><?= _xls_currency($model->total); ?></td>
       </tr>
     <?php if($model->PromoCode): ?>

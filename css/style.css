@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 b { font-weight: 700; }
 i { font-style: italic; }
 u { text-decoration: underline;}
-input, input:focus { font-family: inherit; font-size: 1.1em; line-height: 1.2em; border: 10px solid black; padding: 0px;border-radius: 0px; background: black; color: white;}
+input, input:focus { font-family: inherit; font-size: 1.1em; line-height: 1.2em; border: 1px solid black; padding: 0px;border-radius: 0px; background: #ededed; color: #000;}
 select, input[type="text"], input[type="password"], input[type="email"],input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus { font-family: inherit; font-size: 1.1em; line-height: 1.2em; width: 200px; box-shadow:none; padding: 0px; border-radius: 0px;}
 input { -webkit-appearance: none;  }
 input[type="checkbox"] { width: 20px; height: 20px; border: 0px; -webkit-appearance: checkbox; }
@@ -217,7 +217,8 @@ a:hover {  text-decoration: none;   }
 #checkout legend, #contact-form legend, #orderdisplay legend  { margin-bottom: 4px; text-transform: uppercase;  font-size: 1em; }
 #checkout label, #contact-form label { text-transform: uppercase; font-size: 0.9em; font-weight: normal;}
 #checkout .warning, #checkout .errorMessage, #contact-form .warning, #contact-form .errorMessage {  text-transform: uppercase; font-size: 0.8em; line-height: 14px;}
-#checkout input[type="text"], #checkout input[type="password"], #checkout input[type="email"], #checkout input[type="select"],#checkout input[type="text"]:focus,#checkout input[type="password"]:focus, #checkout input[type="email"]:focus, #checkout input[type="select"]:focus { font-size: 1.2em; border: 7px solid #E5E5E5; text-transform: none; padding: 2px; margin: 0; }
+#checkout input[type="text"], #checkout input[type="password"], #checkout input[type="email"], #checkout input[type="select"] { font-size: 1.2em; border: 1px solid #ccc; text-transform: none; padding: 2px; margin: 0; }
+#checkout input[type="text"]:focus, #checkout input[type="password"]:focus, #checkout input[type="email"]:focus, #checkout input[type="select"]:focus { border-color: #999; }
 #contact-form input[type="text"], #contact-form input[type="password"], #contact-form input[type="email"], #contact-form input[type="select"],#contact-form input[type="text"]:focus,#contact-form input[type="password"]:focus, #contact-form input[type="email"]:focus, #contact-form input[type="select"]:focus { font-size: 1.2em; border: 7px solid #E5E5E5; text-transform: none; padding: 2px; margin: 0; }
 #checkout .red,#contact-form .red, .customer_reg_err_msg {  font-size: 1.1em;text-transform: uppercase; }
 #checkout fieldset { border-bottom: 2px dotted #e7e7e7; margin-bottom: 20px; padding-bottom: 10px; margin-left: 0; }

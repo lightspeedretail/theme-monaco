@@ -1,4 +1,4 @@
-<div class='container-fluid'>
+<div class='container-fluid product-grid'>
 <?php if (count($model) > 0): ?>
 
 
@@ -29,7 +29,7 @@
 
 		<div class="clearfix"></div>
 
-		<div id="paginator" class="span12">
+		<div id="paginator">
 			<?php $this->widget('CLinkPager', array(
 				'id'=>'pagination',
 				'currentPage'=>$pages->getCurrentPage(),
