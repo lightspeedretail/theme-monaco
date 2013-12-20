@@ -220,7 +220,7 @@ a:hover {  text-decoration: none;   }
 #checkout input[type="text"], #checkout input[type="password"], #checkout input[type="email"], #checkout input[type="select"],#checkout input[type="text"]:focus,#checkout input[type="password"]:focus, #checkout input[type="email"]:focus, #checkout input[type="select"]:focus { font-size: 1.2em; border: 7px solid #E5E5E5; text-transform: none; padding: 2px; margin: 0; }
 #contact-form input[type="text"], #contact-form input[type="password"], #contact-form input[type="email"], #contact-form input[type="select"],#contact-form input[type="text"]:focus,#contact-form input[type="password"]:focus, #contact-form input[type="email"]:focus, #contact-form input[type="select"]:focus { font-size: 1.2em; border: 7px solid #E5E5E5; text-transform: none; padding: 2px; margin: 0; }
 #checkout .red,#contact-form .red, .customer_reg_err_msg {  font-size: 1.1em;text-transform: uppercase; }
-#checkout fieldset { border-bottom: 2px dotted #e7e7e7; margin-bottom: 20px; padding-bottom: 10px; }
+#checkout fieldset { border-bottom: 2px dotted #e7e7e7; margin-bottom: 20px; padding-bottom: 10px; margin-left: 0; }
 #checkout #Payforms fieldset { border-bottom: none; }
   /* tweaks for specific fields. They all have IDs so it makes it easy */
 #checkout label[for=CheckoutForm_receiveNewsletter], #checkout label[for=CheckoutForm_billingSameAsShipping],
@@ -335,8 +335,11 @@ a:hover {  text-decoration: none;   }
 .jcarousel-skin-slider .caption { font-size: 9pt;  text-transform: uppercase; max-width: 150px;}
 
 /****** tweaks ******/
-.midrow { margin-bottom: 12px;}
-.shortrow { margin-bottom: 2px;}
+.row { margin-left: 0; }
+.midrow { margin-bottom: 12px; }
+.shortrow { margin-bottom: 2px; }
+.row-fluid [class*="span"] { margin-left: 0; }
+.container-fluid { padding-left: 0; }
 
 /***** Global adjustments as we resize down ******/
 @media only screen and (max-width: 960px) { /*iPad vertical and below */
