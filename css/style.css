@@ -68,15 +68,16 @@ a:hover {  text-decoration: none;   }
 #nav_products .productstab { height: 45px; margin-top: 2px;}
 #nav_products .dropspace { margin-left: 90px;} /* push dropdown menu down from underneath PRODUCTS tab */
 /* all this to create dropdown and popout menu effects */
-#nav_products a { display: block; margin-right: 3px; padding: 0 0 0 0 ; text-decoration: none;  z-index: 2001;}
-#nav_products ul { border: none; line-height: 1; list-style: none; list-style-type: none; margin: 0px 0 0px 0px; padding-bottom: 20px;z-index: 2002;}
+#nav_products a { display: block; margin-right: 3px; padding: 0; text-decoration: none;  z-index: 2001;}
+#nav_products ul li * { transition: all 0.8s; -ms-transition: all 0.8s; -moz-transition: all 0.8s; -webkit-transition: all 0.8s; }
+#nav_products ul { border: none; line-height: 1; list-style: none; list-style-type: none; margin: 0; padding-bottom: 20px;z-index: 2002;}
 #nav_products ul a {  border-bottom: 1px dotted #cccccc; z-index: 2003;}
-#nav_products li ul { left: -999em; position: absolute; width: 10em; height: 29px; z-index: 2004;}
-#nav_products li ul ul { margin: -33px 0 0 180px; z-index: 2005;}
+#nav_products li ul { left: -999em; position: absolute; width: 10em; height: 29px; z-index: 2004; opacity: 0;}
+#nav_products li ul ul { margin: -33px 0 0 180px; z-index: 2005; opacity: 0;}
 #nav_products ul li ul li a { font-size: 1em; font-weight: 700; padding: 8px 10px; width: 160px; border-bottom: 1px dotted #cccccc; z-index: 2006;}
-#nav_products ul li ul li a:hover { border-bottom: 1px dotted #cccccc; z-index: 2007;}
-#nav_products li:hover ul ul, #nav_products li:hover ul ul ul, #nav_products li.sfhover ul ul, #nav_products li.sfhover ul ul ul { left: -999em; z-index: 2008;}
-#nav_products li:hover ul, #nav_products li li:hover ul, #nav_products li li li:hover ul, #nav_products li.sfhover ul, #nav_products li li.sfhover ul, #nav_products li li li.sfhover ul, #nav_products li:hover ul, #nav_products li:hover ul, #nav_products li.sfhover ul, #nav_products li:hover ul, #nav_products li li:hover ul, #nav_products li.sfhover ul, #nav_products li li.sfhover ul {     left: auto; z-index: 2009;}
+#nav_products ul li ul li a:hover { border-bottom: 1px dotted #cccccc; z-index: 2007; opacity: 1;}
+#nav_products li:hover ul ul, #nav_products li:hover ul ul ul, #nav_products li.sfhover ul ul, #nav_products li.sfhover ul ul ul { left: -999em; z-index: 2008; opacity: 0;}
+#nav_products li:hover ul, #nav_products li li:hover ul, #nav_products li li li:hover ul, #nav_products li.sfhover ul, #nav_products li li.sfhover ul, #nav_products li li li.sfhover ul, #nav_products li:hover ul, #nav_products li:hover ul, #nav_products li.sfhover ul, #nav_products li:hover ul, #nav_products li li:hover ul, #nav_products li.sfhover ul, #nav_products li li.sfhover ul { left: auto; z-index: 2009; opacity: 1;}
 
 
 
@@ -219,7 +220,8 @@ a:hover {  text-decoration: none;   }
 #checkout .warning, #checkout .errorMessage, #contact-form .warning, #contact-form .errorMessage {  text-transform: uppercase; font-size: 0.8em; line-height: 14px;}
 #checkout input[type="text"], #checkout input[type="password"], #checkout input[type="email"], #checkout input[type="select"] { font-size: 1.2em; border: 1px solid #ccc; text-transform: none; padding: 2px; margin: 0; }
 #checkout input[type="text"]:focus, #checkout input[type="password"]:focus, #checkout input[type="email"]:focus, #checkout input[type="select"]:focus { border-color: #999; }
-#contact-form input[type="text"], #contact-form input[type="password"], #contact-form input[type="email"], #contact-form input[type="select"],#contact-form input[type="text"]:focus,#contact-form input[type="password"]:focus, #contact-form input[type="email"]:focus, #contact-form input[type="select"]:focus { font-size: 1.2em; border: 7px solid #E5E5E5; text-transform: none; padding: 2px; margin: 0; }
+#contact-form input[type="text"], #contact-form input[type="password"], #contact-form input[type="email"], #contact-form input[type="select"] { font-size: 1.2em; border: 1px solid #ccc; text-transform: none; padding: 2px; margin: 0; }
+#contact-form input[type="text"]:focus,#contact-form input[type="password"]:focus, #contact-form input[type="email"]:focus, #contact-form input[type="select"]:focus, textarea:focus { border-color: #999; box-shadow: none; }
 #checkout .red,#contact-form .red, .customer_reg_err_msg {  font-size: 1.1em;text-transform: uppercase; }
 #checkout fieldset { border-bottom: 2px dotted #e7e7e7; margin-bottom: 20px; padding-bottom: 10px; margin-left: 0; }
 #checkout #Payforms fieldset { border-bottom: none; }
