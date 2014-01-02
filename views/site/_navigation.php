@@ -1,4 +1,19 @@
 
+<?php
+function build_submenu($item) {
+	if ( !empty($item['hasChildren']) ) {
+		echo '<li class="nav_menuheader"><a href="'.$item["link"].'">'.$item["text"].'</a>';
+		echo '<ul class="submenu">';
+		foreach ( $item['children'] as $subitem ) {
+			build_submenu($subitem);
+		}
+		echo '</ul>';
+		echo '</li>';
+	} else {
+		echo '<li><a href="'.$item["link"].'">'.$item["text"].'</a></li>';
+	}
+}
+?>
 <?php echo CHtml::link(CHtml::image(Yii::app()->baseUrl._xls_get_conf('HEADER_IMAGE')), Yii::app()->baseUrl."/", array('class'=>'logo') ); ?>
 <?php $this->widget('application.extensions.wsmenu.wsmenu', array(
 		'categories'=> Category::GetTree(),
@@ -10,9 +25,7 @@
 	<span class='visible-phone'>Products</span>
 	<ul class='visible-phone'>
 		<?php foreach(Category::GetTree() as $item) { ?>
-			<li>
-				<a href='<?php echo $item['link']?>'><?php echo $item['text']; ?></a>
-			</li>
+			<?php build_submenu($item); ?>
 		<?php } ?>
 	</ul>
 <?php if (count(CustomPage::model()->toptabs()->findAll()))
