@@ -531,7 +531,7 @@ li.nav_menuheader {
   }
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 700px) {
   .product_cell {
     float: none !important;
     margin: 5px auto;
