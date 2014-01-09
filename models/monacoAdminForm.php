@@ -13,13 +13,25 @@ class monacoAdminForm extends ThemeForm
 	 */
 	protected $name = "Monaco";
 	protected $thumbnail = "monaco.png";
-	protected $version = 1.0;
+	protected $version = 1;
 	protected $description = "A template for fashion";
 	protected $credit = "Designed by Skyrocket Digital Inc.";
 	protected $parent; //Used when a theme is a copy of another theme to control inheritance
 	protected $bootstrap = null;
 	protected $viewset = "cities";
 
+	protected $CATEGORY_IMAGE_HEIGHT = 512;
+	protected $CATEGORY_IMAGE_WIDTH = 512;
+	protected $DETAIL_IMAGE_HEIGHT = 256;
+	protected $DETAIL_IMAGE_WIDTH = 256;
+	protected $LISTING_IMAGE_HEIGHT = 400;
+	protected $LISTING_IMAGE_WIDTH = 400;
+	protected $MINI_IMAGE_HEIGHT = 100;
+	protected $MINI_IMAGE_WIDTH = 100;
+	protected $PREVIEW_IMAGE_HEIGHT = 120;
+	protected $PREVIEW_IMAGE_WIDTH = 120;
+	protected $SLIDER_IMAGE_HEIGHT = 256;
+	protected $SLIDER_IMAGE_WIDTH = 256;
 
 	/*
 	 * Define any keys here that should be available for the theme
@@ -45,18 +57,7 @@ class monacoAdminForm extends ThemeForm
 	 * the Configuration panel for your theme, and click Save. This will write these values to the
 	 * xlsws_module table for your themes, which is where Web Store looks for them at runtime.
 	 */
-	public $CATEGORY_IMAGE_HEIGHT = 180;
-	public $CATEGORY_IMAGE_WIDTH = 180;
-	public $DETAIL_IMAGE_HEIGHT = 750;
-	public $DETAIL_IMAGE_WIDTH = 500;
-	public $LISTING_IMAGE_HEIGHT = 190;
-	public $LISTING_IMAGE_WIDTH = 190;
-	public $MINI_IMAGE_HEIGHT = 30;
-	public $MINI_IMAGE_WIDTH = 30;
-	public $PREVIEW_IMAGE_HEIGHT = 30;
-	public $PREVIEW_IMAGE_WIDTH = 30;
-	public $SLIDER_IMAGE_HEIGHT = 90;
-	public $SLIDER_IMAGE_WIDTH = 90;
+
 	public $PRODUCTS_PER_PAGE = 20;
 
 	public $disableGridRowDivs = true;
