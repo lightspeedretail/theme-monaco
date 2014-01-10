@@ -18,12 +18,12 @@
 	}
 	?>
         <div class="row-fluid">
-	        <div class="span5">
+	        <div class="span6">
 				<?php echo $form->labelEx($model,'address_label'); ?>
 				<?php echo $form->textField($model,'address_label',array('prompt' =>'Home, Work')); ?>
 				<?php echo $form->error($model,'address_label'); ?>
 	        </div>
-	        <div class="span5 rememberMe">
+	        <div class="span4 rememberMe">
 		        <?php echo $form->checkbox($model,'active'); ?>
 		        <?php echo $form->labelEx($model,'active'); ?>
 		        <?php echo $form->error($model,'active'); ?><br>
