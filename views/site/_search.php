@@ -1,6 +1,6 @@
-<div class="span8">
+<div class="span3 search_bar">
 	<?php echo CHtml::beginForm(Yii::app()->createUrl('search/results'),'get'); ?>
-	<span class="search_left"><img class="spyglass" src="<?= Yii::app()->theme->baseUrl; ?>/css/images/spyglass.png"></span>
+	<!-- <span class="search_left"><img class="spyglass" src="<?= Yii::app()->theme->baseUrl; ?>/css/images/spyglass.png"></span> -->
 	<span class="search_box"><?php
 		$this->widget('bootstrap.widgets.TbTypeahead',array(
 			'name'=>'q',
@@ -38,6 +38,7 @@
 	</span>
 	</form>
 </div>
-<div class="span1">
-	<span class="search_advanced right"><a href="<?php echo _xls_site_url('/search'); ?>"><img class="spyglass" src="<?= Yii::app()->theme->baseUrl; ?>/css/images/adv_search.png"></a></span>
+<!-- <div class="span3 advanced">
+	<span class="search_advanced right"><a href="<?php echo _xls_site_url('/search'); ?>"><img class="spyglass" src="<?= Yii::app()->theme->baseUrl; ?>/css/images/spyglass.png">Advanced search</a></span>
 </div>
+ -->

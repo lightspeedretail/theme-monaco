@@ -33,19 +33,10 @@
 
 		
 		<?php Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl.'/js/all.js'); ?>
-		<script type="text/javascript">
-			(function($) {
-				$(function() {
-					// script for mobile navigation
-					$("ul.visible-phone li a:empty").remove();
-					$("ul.visible-phone li a").click(function(event) {
-						if ( $(this).siblings("ul.submenu").length > 0 && !$(this).siblings("ul.submenu").is(":visible") ) {
-							event.preventDefault();
-							$(this).siblings("ul.submenu").slideToggle();
-						}
-					});
-				});
-			})(jQuery);
+		<script>
+			jQuery(document).ready(function () {
+			    jQuery('nav').meanmenu();
+			});
 		</script>
 	</body>
 </html>

@@ -19,9 +19,12 @@
 	<link rel="Shortcut Icon" href="<?=Yii::app()->baseUrl."/images/favicon.ico" ?>" type="image/x-icon"/>
 
 	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->baseUrl.'/css/base.css'); ?>
+
 	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl.'/css/style.css'); ?>
 	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl.'/css/monaco.css'); ?>
 	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl.'/css/'._xls_get_conf('CHILD_THEME').'.css'); ?>
 	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl.'/css/custom.css'); ?>
+		<?php Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl.'/js/accordion.js'); ?>
+		<?php Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom.js'); ?>
 	<?php echo $this->renderPartial("/site/_google",null,true); ?>
 </head>

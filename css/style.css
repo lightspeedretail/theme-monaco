@@ -12,7 +12,7 @@ file, and leaving this file untouched.
 
 /**** Global settings ******/
 #container { max-width: 960px; margin: auto;}
-body { font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; }
+body { font-family: "lato", sans-serif; font-weight: normal; }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
