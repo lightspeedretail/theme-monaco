@@ -118,7 +118,7 @@
   background-color: #dcdcc8;
   color: #565350;
   height: 176px;
-  position: absolute;
+  /*position: absolute;*/
   bottom: 0px;
   padding-left: 340px;
   
@@ -363,6 +363,7 @@ li.nav_menuheader {
   line-height: 25px;
   max-width: 190px;
   min-width: 190px;
+  margin-top: 20px;
   padding: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1343,6 +1344,8 @@ input.cart_qty_box:focus {
   width: 250px;
   max-width: 250px;
 }
+
+.rememberMe label { vertical-align: bottom; }
 
 #btnModalLogin {
   color: white;

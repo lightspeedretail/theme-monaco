@@ -231,7 +231,7 @@ a:hover {  text-decoration: none;   }
 #checkout label[for=CustomerAddress_residential], #checkout label[for=Customer_newsletter_subscribe] { display: inline;}
 .rememberMe label { display: inline;}
 #checkout #CheckoutForm_billingState, #checkout #CustomerAddress_state { width: 100px;}
-#checkout #CheckoutForm_billingPostal, #checkout #CustomerAddress_postal { width: 135px; }
+#checkout #CheckoutForm_billingPostal, #checkout #CustomerAddress_postal { width: 135px; height: 21px; }
 #checkout #CheckoutForm_shippingState { width: 100px;}
 #checkout #CheckoutForm_shippingPostal { width: 135px; }
 #checkout #CheckoutForm_billingAddress1, #checkout #CustomerAddress_address1 { margin-bottom: 3px; }
