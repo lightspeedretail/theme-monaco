@@ -163,7 +163,7 @@
 				<?php
 					$this->widget('ext.JCarousel.JCarousel', array(
 						'dataProvider' => $model->related(),
-						'thumbUrl' => '$data->SliderImage',
+						'thumbUrl' => '$data->MiniImage',
 						'imageUrl' => '$data->Link',
 						'summaryText' => Yii::t('global',
 							'Other items you may be interested in:'),

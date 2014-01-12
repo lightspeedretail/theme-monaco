@@ -38,7 +38,7 @@ a:hover {  text-decoration: none;   }
 .smalllightbutton {   height: 18px; padding-top: 4px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; text-align: center;cursor: pointer; float: left; text-transform: uppercase; font-size: 0.9em;}
 .smalldarkbutton a, .smalllightbutton a {  }
 .label { text-transform: uppercase; }
-.errorMessage  {  text-transform: uppercase; font-size: 0.7em; line-height: 14px;}
+.errorMessage  {  text-transform: uppercase; font-size: 0.7em; line-height: 14px; color: red}
 .popupwide { width: 450px; }
 .popup { width: 350px; }
 .popupsmall { width: 300px; }
@@ -194,8 +194,8 @@ a:hover {  text-decoration: none;   }
 #product_details .description { margin-top: 18px; margin-bottom: 30px;}
 #product_details .additionalimages { margin-bottom: 18px; }
 
-#product_details .addcart { height: 24px; padding-top: 12px; padding-bottom: 10px; margin-right: 10px; text-align: center;margin-bottom: 10px; cursor: pointer; float: left; height: 40px;}
-#product_details .addcart a { margin-top: 20px;  text-transform: uppercase; font-size: 1.1em;}
+#product_details .addcart, #btnLogin, #CheckoutForm_btnPromoCode, #btnCalculate, #checkoutSubmitButton { height: 24px; padding-top: 12px; padding-bottom: 10px; margin-right: 10px; text-align: center;margin-bottom: 10px; cursor: pointer; float: left; height: 40px;}
+#product_details .addcart a, #btnLogin, #CheckoutForm_btnPromoCode, #btnCalculate, #checkoutSubmitButton { margin-top: 20px;  text-transform: uppercase; font-size: 1.1em;}
 
 #product_details .wishlist {  height: 24px; padding-top: 12px; padding-bottom: 10px; margin-right: 5px; margin-left: 0px; text-align: center;margin-bottom: 10px; cursor: pointer; float: left; height: 40px;}
 #product_details .wishlist a { margin-top: 20px;  text-transform: uppercase; font-size: 1.1em;}
@@ -228,7 +228,8 @@ a:hover {  text-decoration: none;   }
   /* tweaks for specific fields. They all have IDs so it makes it easy */
 #checkout label[for=CheckoutForm_receiveNewsletter], #checkout label[for=CheckoutForm_billingSameAsShipping],
 #checkout label[for=CheckoutForm_acceptTerms],#checkout label[for=CustomerAddress_active] ,
-#checkout label[for=CustomerAddress_residential], #checkout label[for=Customer_newsletter_subscribe] { display: inline;}
+#checkout label[for=CustomerAddress_residential], #checkout label[for=Customer_newsletter_subscribe],
+#checkout label[for=CheckoutForm_shippingResidential] { display: inline; vertical-align: bottom}
 .rememberMe label { display: inline;}
 #checkout #CheckoutForm_billingState, #checkout #CustomerAddress_state { width: 100px;}
 #checkout #CheckoutForm_billingPostal, #checkout #CustomerAddress_postal { width: 135px; height: 21px; }

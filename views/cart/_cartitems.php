@@ -10,11 +10,13 @@
 
   <?php foreach ( $model->cartItems as $item ) : ?>
     <tr class="cart-item row-fluid">
-      <td class="span5 item-description">
-      <?php if ($item->product->ProductPhotos) { ?>
-        <img src="<?php echo $item->product->ProductPhotos[0]['image']; ?>" style='max-width: 128px' />
-      <?php } ?>
-        <a href="<?php echo $item->Link; ?>"><?=  _xls_truncate($item->description, 65, "...\n", true); ?></a>
+      <td class="span2 item-img">
+          <?php if ($item->product->ProductPhotos) { ?>
+          <img src="<?php echo $item->product->ProductPhotos[0]['image']; ?>" style='max-width: 128px' />
+      </td>
+      <td class="span3 item-description">
+          <?php } ?>
+          <a href="<?php echo $item->Link; ?>"><?=  _xls_truncate($item->description, 65, "...\n", true); ?></a>
       </td>
       <td class="span2 item-price">
         <?= ($item->discount) ? sprintf("<strike>%s</strike> ", _xls_currency($item->sell_base))._xls_currency($item->sell_discount) : _xls_currency($item->sell);  ?>

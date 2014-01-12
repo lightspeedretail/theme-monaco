@@ -35,7 +35,8 @@ $form = $this->beginWidget('CActiveForm', array(
   <table class="cart-table" cellspacing="0">
     <thead class="row-fluid cart-header">
       <tr>
-        <th class="span5 item-description">Item</th>
+        <th class="span2 item-img">Item</th>
+        <th class="span3 item-description">&nbsp;</th>
         <th class="span2 item-price"><?= Yii::t('cart','Price'); ?></th>
         <th class="span2 item-quantity"><?= Yii::t('cart','Qty'); ?></th>
         <th class="span3 item-subtotal"><?= Yii::t('cart','Subtotal'); ?></th>
