@@ -201,7 +201,7 @@ p.copyright {
     margin: 0 auto 5px;
     padding: 0;
     text-align: center;
-    width: 370px;
+    /*width: 370px;*/
 }
 
 .header h1 span { 
