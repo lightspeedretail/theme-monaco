@@ -4,7 +4,8 @@
  			<div id="side">
                <ul id="acc3" class="accordion">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products </a>
+                        <a href="/search/browse" class="dropdown-toggle">Products </a>
+<!--                        <a href="/search/browse" class="dropdown-toggle" data-toggle="dropdown" >Products </a>-->
                     <?php
                     echo '<ul >';
                     echo '<div class="mtop"></div>';
