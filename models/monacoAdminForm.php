@@ -176,7 +176,7 @@ class monacoAdminForm extends ThemeForm
 				),
 				'topLandscape'=>array(
 					'type'=>'dropdownlist',
-					'items'=> Gallery::ImageList(2),
+					'items'=> Gallery::ImageList(1),
 				),
 
 
@@ -190,7 +190,7 @@ class monacoAdminForm extends ThemeForm
 				),
 				'topPortrait'=>array(
 					'type'=>'dropdownlist',
-					'items'=> Gallery::ImageList(2),
+					'items'=> Gallery::ImageList(1),
 				),
 
 				'bottomLandscapeText'=>array(
@@ -203,7 +203,7 @@ class monacoAdminForm extends ThemeForm
 				),
 				'bottomLandscape'=>array(
 					'type'=>'dropdownlist',
-					'items'=> Gallery::ImageList(2),
+					'items'=> Gallery::ImageList(1),
 				),
 
 				'bottomPortraitText'=>array(
@@ -216,7 +216,7 @@ class monacoAdminForm extends ThemeForm
 				),
 				'bottomPortrait'=>array(
 					'type'=>'dropdownlist',
-					'items'=> Gallery::ImageList(2),
+					'items'=> Gallery::ImageList(1),
 				)
 			),
 
