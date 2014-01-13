@@ -1142,7 +1142,7 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 #product_details .addcart, #btnLogin, #CheckoutForm_btnPromoCode, #btnCalculate, #checkoutSubmitButton  { background-color: #434343; }
 #product_details .wishlist a, #btnLogin, #CheckoutForm_btnPromoCode, #btnCalculate, #checkoutSubmitButton,
 #product_details .addcart a { color: white; font-size: 1em; }
-
+#product_details .addcart { margin-left: 12px; }
 #product_details .addcart, #product_details .wishlist, #SelectSize, #SelectColor, #btnLogin, #CheckoutForm_btnPromoCode,
 #btnCalculate, #checkoutSubmitButton {
   max-width: 160px;
