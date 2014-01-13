@@ -500,9 +500,34 @@
                         <th class="span3 item-subtotal"><?= Yii::t('cart','Subtotal'); ?></th>
                     </tr>
                     </thead>
-<!--                    <tbody class="row-fluid">-->
+
                     <?php $this->renderPartial('/cart/_cartitems'); ?>
-<!--                    </tbody>-->
+
+                    <?php if (!isset($model1)) $model1 = Yii::app()->shoppingcart; ?>
+                    <tr>
+                        <td class="span5">&nbsp;</td>
+                        <td class="span5 textalign-right item-foot-label" colspan="2"><?= Yii::t('cart','Subtotal'); ?></td>
+                        <td class="span2 textalign-right item-foot-price"><span id="cartSubtotal"><?= _xls_currency($model1->subtotal); ?></span></td>
+                    </tr>
+
+                    <?php echo $this->renderPartial('/cart/_carttaxes',array('model'=>$model1),true); ?>
+
+                    <tr class="slimrow">
+                        <td class="span5">&nbsp;</td>
+                        <td class="span5 textalign-right item-foot-label" colspan="2"><?= Yii::t('cart','Shipping'); ?></td>
+                        <td class="span2 textalign-right item-foot-price"><span id="cartShipping"><?= _xls_currency($model1->shipping_sell); ?></span></td>
+                    </tr>
+                    <tr class="slimrow">
+                        <td class="span5">&nbsp;</td>
+                        <td class="span5 textalign-right item-foot-label" colspan="2"><strong><?= Yii::t('cart',"Total"); ?></strong> </td>
+                        <td class="span2 textalign-right item-foot-price"><strong><span id="cartTotal"><?= _xls_currency($model1->total); ?></span></strong></td>
+                    </tr>
+                    <?php if($model1->PromoCode): ?>
+                        <tr class="slimrow">
+                            <td class="span5">&nbsp;</td>
+                            <td class="span5 item-foot-label promoCode"><?= Yii::t('cart',"Promo Code {code} Applied",array('{code}'=>"<strong>".$model1->PromoCode."</strong>")); ?></td>
+                        </tr>
+                    <?php endif; ?>
                 </table>
 	    </fieldset>
 	</div>
