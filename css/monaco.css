@@ -475,6 +475,7 @@ li.nav_menuheader {
   padding: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-bottom: 5px;
 }
 #ShoppingCart .cart-table tfoot tr td.item-foot-price {
   text-align: right;
