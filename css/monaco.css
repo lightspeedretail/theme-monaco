@@ -399,26 +399,34 @@ li.nav_menuheader {
 }
 #btnSubmit:hover { opacity: 1; }
 
+#checkoutShoppingCart .cart-table,
 #ShoppingCart .cart-table {
   width: 95%;
 }
+#checkoutShoppingCart .cart-table .item-description,
 #ShoppingCart .cart-table .item-description {
   text-align: left;
   margin-left: 30px;
   padding-top: 55px;
 }
 #ShoppingCart .cart-table .item-price,
-#ShoppingCart .cart-table .item-quantity {
+#checkoutShoppingCart .cart-table .item-price,
+#ShoppingCart .cart-table .item-quantity,
+#checkoutShoppingCart .cart-table .item-quantity {
   text-align: center;
 }
-#ShoppingCart .cart-table .item-subtotal {
+#ShoppingCart .cart-table .item-subtotal,
+#checkoutShoppingCart .cart-table .item-subtotal {
   text-align: right;
 }
 #ShoppingCart .cart-table tr th,
-#ShoppingCart .cart-table tr td {
+#checkoutShoppingCart .cart-table tr th,
+#ShoppingCart .cart-table tr td,
+#checkoutShoppingCart .cart-table tr td {
   font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-#ShoppingCart .cart-table tbody tr td  a{
+#ShoppingCart .cart-table tbody tr td  a,
+#checkoutShoppingCart .cart-table tbody tr td  a{
     /*float: right;*/
     padding: 0 10px;
     width: 240px;
@@ -429,15 +437,28 @@ li.nav_menuheader {
     margin-top: 20px;
     max-height: 128px;
 }
+#checkoutShoppingCart .cart-table tbody tr td {
+    max-height: 128px;
+}
+#checkoutShoppingCart .cart-table [class*="span"] {
+    float: left;
+}
+
 #ShoppingCart .cart-table tbody .item-price,
+#checkoutShoppingCart .cart-table tbody .item-price,
 #ShoppingCart .cart-table tbody .item-quantity,
-#ShoppingCart .cart-table tbody .item-subtotal {
+#checkoutShoppingCart .cart-table tbody .item-quantity,
+#ShoppingCart .cart-table tbody .item-subtotal,
+#checkoutShoppingCart .cart-table tbody .item-subtotal {
   line-height: 128px;
   vertical-align: middle;
 }
 #ShoppingCart .cart-table thead .item-img { text-align: left; padding-left: 30px; }
+#checkoutShoppingCart .cart-table thead .item-img { text-align: left; padding-left: 30px; }
 #ShoppingCart .cart-table thead .item-description { padding-top: 0px; }
-#ShoppingCart .cart-table tfoot tr td {
+#checkoutShoppingCart .cart-table thead .item-description { padding-top: 0px; }
+#ShoppingCart .cart-table tfoot tr td,
+#checkoutShoppingCart .cart-table tfoot tr td {
   margin-top: 20px;
   margin-bottom: 20px;
 }
