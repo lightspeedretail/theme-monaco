@@ -1,4 +1,4 @@
-<h1 xmlns="http://www.w3.org/1999/html"><?php echo Yii::t('global',($model->id >0 ? 'Update your account' : 'Create a Free Account')); ?></h1>
+<h1><?php echo Yii::t('global',($model->id >0 ? 'Update your account' : 'Create a Free Account')); ?></h1>
 
 <?php
 /* Create a new wish list form. We use the Checkout ID to reuse our CSS formatting */
@@ -30,7 +30,6 @@
 
 
 	    <fieldset class="span12">
-<!--	        <legend>--><?php //echo Yii::t('checkout','Customer Contact'); ?><!--</legend>-->
             <div class="clear">&nbsp;</div>
 	        <div class="row-fluid">
 		        <div class="span3">
@@ -75,8 +74,6 @@
 	  <div id="createaccount">
         <fieldset class="span12">
             <legend><?php
-                //echo (Yii::app()->user->isGuest ?  Yii::t('global','Choose a password') :
-                //  Yii::t('global','Enter a new password here to change your password'));
                 echo (Yii::app()->user->isGuest ?  '' :
                     Yii::t('global','Enter a new password here to change your password'));
 
