@@ -19,7 +19,7 @@ class monacoAdminForm extends ThemeForm
 	protected $parent; //Used when a theme is a copy of another theme to control inheritance
 	protected $bootstrap = null;
 	protected $viewset = "cities";
-	protected $cssfiles = "style,glencoe,offcanvas";
+	protected $cssfiles = "style,monaco";
 
 	protected $CATEGORY_IMAGE_HEIGHT = 512;
 	protected $CATEGORY_IMAGE_WIDTH = 512;
