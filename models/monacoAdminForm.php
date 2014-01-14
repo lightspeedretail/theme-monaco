@@ -50,7 +50,9 @@ class monacoAdminForm extends ThemeForm
 	 * items that are listed in the getAdminForm() function below are available to the user to change
 	 *
 	 */
-	public $CHILD_THEME = "light"; //Required, to be backwards compatible with CHILD_THEME key
+
+	//This theme doesn't have color options, so just set child to custom which removes the css from _head (clever trick)
+	public $CHILD_THEME = "custom"; //Required, to be backwards compatible with CHILD_THEME key
 
 	/*
 	 * ATTENTION THEME DESIGNERS: These values below are NOT live, they are defaults. If you are experimenting
@@ -102,7 +104,7 @@ class monacoAdminForm extends ThemeForm
 	public function rules()
 	{
 		return array(
-			array('CHILD_THEME','required'),
+			array('CHILD_THEME','safe'),
 
 			array('headerSurtitle', 'default', 'value' => 'Collection II'),
 			array('headerSubtitle', 'default', 'value' => 'High End Luxury Fashion Theme'),
@@ -153,10 +155,10 @@ class monacoAdminForm extends ThemeForm
 
 			'elements'=>array(
 
-				'CHILD_THEME'=>array(
-					'type'=>'dropdownlist',
-					'items'=>array('light'=>'Light','dark'=>'Dark'),
-				),
+//				'CHILD_THEME'=>array(
+//					'type'=>'dropdownlist',
+//					'items'=>array('light'=>'Light','dark'=>'Dark'),
+//				),
 				
 				'headerSurtitle'=>array(
 					'type'=>'text',
