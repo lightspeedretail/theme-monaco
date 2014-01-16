@@ -350,6 +350,7 @@ a:hover {  text-decoration: none;   }
     body { font-size: 0.9em; }
     h1, h2, h3 { font-size: 1.3em; }
     select, input[type="text"], input[type="password"], input[type="email"] { max-width: 190px; }
+    label { width: 100%; }
     #product_details img { max-width: 90%;}s
     #product_details #SelectSize { float: left; margin-right: 2px;}
     #checkout #CustomerContactBillingAddressState { width: 75px;}
@@ -370,7 +371,8 @@ a:hover {  text-decoration: none;   }
 
 }
 @media only screen and (max-width: 767px) {/* iPhone */
-    select, input[type="text"], input[type="password"], input[type="email"] { max-width: 200px; }
+    input[type="text"], input[type="password"], input[type="email"] { max-width: 150px; }
+    select { max-width: 155px; }
     #searchentry .search_box input { width: 75px; }
     #headerimage img { max-width: 360px; }
     .menuheight { max-width: 330px; }
